@@ -5,5 +5,7 @@ import { AppRequest } from '../models';
  * @returns {string}
  */
 export function getUserIdFromRequest(request: AppRequest): string {
-  return request.user && request.user.id;
+  console.log(request.headers['authorization'].split(" "));
+  return request.headers['authorization'].split(" ")[1];
+  // return request.user && request.user.id;
 }
