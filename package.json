@@ -10,6 +10,7 @@
     "build": "nest build --webpack",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
+    "build:webpack": "nest build --webpack --webpackPath webpack.eb.config.js",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
@@ -39,7 +40,10 @@
     "pg": "^8.12.0",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.1",
-    "uuid": "^9.0.0"
+    "terser-webpack-plugin": "^5.3.10",
+    "uuid": "^9.0.0",
+    "webpack": "^5.93.0",
+    "webpack-merge": "^6.0.1"
   },
   "devDependencies": {
     "@nestjs/cli": "^10.0.3",
